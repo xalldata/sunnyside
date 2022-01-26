@@ -1,0 +1,140 @@
+.info-grid-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info-grid-section .info-img .egg {
+	order: 1;
+}
+
+.info-second-grid-section {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 70vh;
+}
+
+.info-img,
+.info-text,
+.info-second-img {
+	width: 50%;
+}
+
+.info-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 130px 100px;
+	background-color: rgb(255, 255, 255);
+}
+
+.info-text a {
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 10px;
+	align-self: flex-start;
+	font-family: "Fraunces", sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+.first-learn-more {
+	border-bottom: 7px solid hsl(51, 100%, 49%);
+}
+
+.second-learn-more {
+	border-bottom: 7px solid hsl(7, 99%, 70%);
+}
+
+.info-text h2 {
+	font-family: "Fraunces", sans-serif;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.info-text p {
+	font-family: "Barlow", sans-serif;
+	line-height: 25px;
+	color: hsl(210, 4%, 67%);
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+.info-cerise-img,
+.info-orange-img {
+	padding: 0 150px 50px 150px;
+	text-align: center;
+	font-family: "Fraunces", sans-serif;
+	color: hsl(212, 27%, 19%);
+	width: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.info-cerise-img {
+	background-image: url("../../assets/desktop/image-graphic-design.jpg");
+}
+
+.info-orange-img {
+	background-image: url("../../assets/desktop/image-photography.jpg");
+}
+
+.info-cerise-img h3,
+.info-orange-img h3 {
+	font-size: 2rem;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1230px) {
+	.info-cerise-img,
+	.info-orange-img {
+		/*display: block;*/
+		padding: 0;
+	}
+
+	.info-cerise-img h3 p,
+	.info-orange-img h3 p {
+		position: relative;
+		bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.info-grid-section,
+	.info-second-grid-section {
+		flex-direction: column;
+	}
+
+	.info-cerise-img,
+	.info-orange-img {
+		padding-bottom: 30px;
+		width: 100%;
+		min-height: 60vh;
+	}
+
+	.info-text {
+		padding-left: 60px;
+		padding-right: 60px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.first-learn-more,
+	.second-learn-more {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.info-img {
+		width: 100%;
+		height: auto;
+	}
+	.info-text {
+		order: 2;
+	}
+}

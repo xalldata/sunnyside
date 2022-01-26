@@ -1,0 +1,33 @@
+.image-gallery {
+	min-height: 50vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.image-1 {
+	background-image: url("../../assets/desktop/image-gallery-milkbottles.jpg");
+}
+
+.image-2 {
+	background-image: url("../../assets/desktop/image-gallery-orange.jpg");
+}
+
+.image-3 {
+	background-image: url("../../assets/desktop/image-gallery-cone.jpg");
+}
+
+.image-4 {
+	background-image: url("../../assets/desktop/image-gallery-sugarcubes.jpg");
+}
+
+@media only screen and (max-width: 1000px) {
+	.image-gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+}
